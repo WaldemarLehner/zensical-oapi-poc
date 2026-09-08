@@ -7,10 +7,32 @@ Macro support was added in [Zensical `v0.0.40`](https://zensical.org/docs/compat
 
 The demo file contains the following contents:
 
-``` md
+```` md title="demo.md" hl_lines="22"
+
+---
+
+hide:
+- navigation
+render_macros: true
+
+---
+
+??? tip "Hidden Navigation"
+
+    Note that this page's navigation was hidden with
+
+    ``` yaml
+    hide:
+    - navigation
+    ```
+
+    in the frontmatter.
+
+    The remainder of this page was entirely rendered by invoking the `generate_openapi(pathToOasRelativeToProjectRoot)` script.
 
 {{ generate_openapi("petstore.oas.json") }}
-```
+
+````
 
 [Go to demo](./demo.md)
 
