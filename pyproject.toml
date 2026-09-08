@@ -1,0 +1,13 @@
+[project]
+name = "zensical-oapi-poc"
+version = "0.1.0"
+description = "A Proof-of-Concept of using Macros to generate OpenAPI Docs into a Zensical page"
+authors = []
+requires-python = ">=3.14"
+dependencies = [
+    "essentials-openapi[full]>=1.4.0",
+]
+
+
+[dependency-groups]
+dev = ["typos>=1.49.0", "zensical>=0.0.57"]
